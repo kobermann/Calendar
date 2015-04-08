@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<?php
+  $db = connect('localhost','root','b4n4n4ram4','Days');
+?>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Ich bin ganz oben </title>
+</head>
+
+<body>
+	<?php
+			$query  = "SELECT * FROM 'Days'";
+			$result = mysqli_query($db, $query);
+			while($row = mysqli_fetch_assoc($result)){
+				echo "$row <br>";
+			}
+	?>
+</body>
+
+</html>
