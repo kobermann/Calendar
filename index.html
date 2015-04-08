@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 
 <?php
-  $db = connect('localhost','root','b4n4n4ram4','Days');
+  $username = "kobermann";
+  $host     = "192.168.0.22";
+  $pw       = "b4n4n4ram4";
+  $table    = "Days";
+  $conn       = new mysqli($host, $username, $pw);
+  
+  if($conn->connect_error){
+	die("Connection failed: " . $conn->connect_error)
+  }
+  echo "Successful!"
 ?>
 
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title> Ich bin ganz oben </title>
+	<title> ... </title>
 </head>
 
 <body>
 	<?php
-			$query  = "SELECT * FROM 'Days'";
+			$query  = "SELECT * FROM Days";
 			$result = mysqli_query($db, $query);
 			while($row = mysqli_fetch_object($result)){
 				echo "$row->content <br>";
