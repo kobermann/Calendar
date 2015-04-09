@@ -1,3 +1,119 @@
+<<<<<<< HEAD
+.db-table{
+  //border: 1px solid black;
+  //border-collapse: collapse;
+  padding: 12em;
+}
+
+.dayView{
+  font-family: Consolas;
+  font-size: 6em;
+  color:#E7F6F3;
+}
+
+
+a{
+  font-family: Consolas;
+  font-size: 6em;
+}
+
+a:link{
+  color:#9FDDD1;
+  text-decoration: none;
+}
+
+a:visited{
+  color:#9FAAE1;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+#gallery a {
+    text-decoration:none;
+    }
+ 
+#gallery .item {
+    width: 200px; height: 200px; overflow: hidden;
+    float: left;
+    border: 5px solid #333;
+    margin: 5px;
+    }
+ 
+#gallery .item a {
+    overflow: hidden;
+    }
+ 
+#gallery .item a img {
+    height: 100%;
+    align-self: center;
+    }
+ 
+.lightbox {
+    /** Hide the lightbox */
+    opacity: 0;
+ 
+    /** Apply basic lightbox styling */
+    position: fixed;
+    z-index: 9999;
+    width: 50%;
+    height: 50%;
+  //top: -100%;
+    left: 0;
+    color:#333333;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    }
+ 
+.lightbox:target {
+    /** Show lightbox when it is target */
+    opacity: 1;
+    outline: none;
+    top: 0;
+}
+ 
+.lightbox .box {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    min-width:500px;
+    margin: 2% auto;
+    padding:10px 20px 10px 20px;
+    background-color:#FFF;
+    box-shadow: 0px 1px 26px -3px #777777;
+    }
+ 
+.lightbox .title {
+    margin:0;
+    padding:0 0 10px 0px;
+    border-bottom:1px #ccc solid;
+    font-size:22px;
+    }
+ 
+.lightbox .content {
+    display:block;
+    position:relative;
+    }
+ 
+.lightbox .close {
+    display:block;
+    float:right;
+    text-decoration:none;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:22px;
+    color:#858585;
+    }
+ 
+.clear {
+    display:block;
+    clear:both;
+    }
+
+=======
 /*form {
 	color: black;
 }*/
@@ -77,3 +193,4 @@ a:visited{
 center {
 
 }
+>>>>>>> e3023139ec6cd6c6b117b3176954509d35fccc01
